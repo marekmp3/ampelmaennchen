@@ -6,7 +6,7 @@ SLEEP_TIME_SECS = 1
 REVEAL_WAIT_TIME_SECS = 2
 BASE_API_PATH = 'https://gitlab.hpi.de/api/v4/projects/8839/pipelines?ref=main&order_by=updated_at&sort=desc'
 
-PRIVATE_TOKEN = open(".token", "r").readlines()[0]
+PRIVATE_TOKEN = open(".token", "r").readlines()[0].strip()
 
 prev_traffic_light_status = 'none'
 traffic_light_status = 'none'
