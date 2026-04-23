@@ -81,7 +81,7 @@ while True:
         print(e)
         
         try:
-            run(['./both.sh'])
+            change_traffic_status('both')
         
         except BaseException as e:
             print('Failed connecting to traffic light:')
